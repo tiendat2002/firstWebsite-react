@@ -1,0 +1,101 @@
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04aa6d;
+    color: white;
+}
+
+.edit-btn {
+    margin-right: 40px;
+    outline: none;
+    border: none;
+    background-color: transparent !important;
+    font-size: 1.4rem;
+
+    :hover {
+        cursor: pointer;
+
+        color: yellow;
+    }
+}
+
+.delete-alt {
+    font-size: 1.4rem;
+    outline: none;
+    border: none;
+    background-color: transparent !important;
+    :hover {
+        cursor: pointer;
+        color: red;
+    }
+}
+
+.addUser-btn {
+    display: block;
+    padding: 10px 12px;
+    text-align: center;
+    line-height: 100%;
+}
+
+.modal-user-container {
+    .modal-header {
+        background-color: black !important;
+        button {
+            border: none;
+            color: white;
+            font-size: 2rem;
+            background-color: transparent;
+            :hover {
+                cursor: pointer;
+                color: #04aa6d;
+            }
+        }
+    }
+    .message-err {
+        color: red;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    .modal-user-body {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        font-size: 1.2rem;
+
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+            &.max-width {
+                width: 100%;
+            }
+            input {
+                border: 1px solid gray;
+                outline: none;
+                height: 30px;
+                padding: 0 10px;
+            }
+        }
+    }
+}
